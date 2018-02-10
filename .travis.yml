@@ -1,7 +1,6 @@
 sudo: required
 
 dist: trusty
-group: deprecated-2017Q4
 
 language:
   - go
@@ -14,7 +13,7 @@ before_install:
   - sudo apt-get install curl git mercurial make binutils gcc bzr bison libgmp3-dev screen -y
   - bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
   - source $HOME/.gvm/scripts/gvm
-  - gvm install go1.9
+  - gvm install go1.9 -b
   - gvm use go1.9 --default
   - go get -u github.com/golang/dep
   - docker pull skycoin/bbs
