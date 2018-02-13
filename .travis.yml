@@ -22,7 +22,6 @@ before_install:
 
 install:
   - go get -v github.com/skycoin/bbs/...
-script:
 
 notifications:
   email: false
