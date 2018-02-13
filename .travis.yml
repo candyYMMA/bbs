@@ -23,6 +23,6 @@ before_install:
 install:
   - go get -v github.com/skycoin/bbs/...
 script:
-  - go build cmd/bbsnode/bbsnode.go
+
 notifications:
   email: false
