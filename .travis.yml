@@ -16,8 +16,8 @@ before_install:
   - gvm install go1.9 -B
   - gvm use go1.9 --default
   - go get -u github.com/golang/dep
-  - docker pull --quiet skycoin/bbs
-  - docker run -p 8080:8080 -p 8998:8998 -p 8996:8996 -v bbs0:/data skycoin/bbs
+  - docker pull skycoin/bbs
+  - docker run -d -p 8080:8080 -p 8998:8998 -p 8996:8996 -v bbs0:/data skycoin/bbs
   - docker ps -a
 
 install:
